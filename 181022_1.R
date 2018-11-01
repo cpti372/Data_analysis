@@ -1,0 +1,37 @@
+x<-matrix(nrow = 5,ncol = 2)
+rownames(x)<-c("kor","eng","math","social","science")
+colnames(x)<-c("mid","final")
+x
+x<-matrix(nrow = 2,ncol = 5)
+rownames(x)<-c("mid","final")
+colnames(x)<-c("kor","eng","math","social","science")
+x
+x[1,1]<-c(95)
+x
+x[1,2]<-c(75)
+x[1,3]<-c(85)
+x[1,4]<-c(90)
+x[1,5]<-c(77)
+x
+x[2,1]<-c(97)
+x[2,2]<-c(67)
+x[2,3]<-c(99)
+x[2,4]<-c(68)
+x[2,5]<-c(82)
+x
+mean(x$mid)
+mean(x[1])
+mean(x[2])
+sum(x[1])
+sum(x[2])
+mean(x[1:5])
+mean(x[2,])
+x[2,]
+mean(x[1,])
+mean(x[2,])
+sum(x[1,])
+sum(x[2,])
+v<-c(100,60,65,70,80,90,100,101,102,103)
+x1<-matrix(nrow = 2,ncol = 5)
+x1[1,1]<-c(1)
+x2[1,2]<-c(2)
