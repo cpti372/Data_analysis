@@ -1,0 +1,82 @@
+name<-function(a,b,c){
+  num<-a+b
+  if(num>c){
+    print("a+b>c")
+  }
+  else{
+    print("a+b<c")
+  }
+}
+name(3,5,10)
+x<-1:10
+ifelse(x%%2==0,"even","odd")
+cumlative<-function(n){
+  sum<-0
+  start<-1
+  while(start<n+1){
+    sum<-sum+start
+    start<-start+1
+  }
+  print(sum)
+  sum<-0
+  start<-1
+  for(i in start:n){
+    sum<-sum+i
+  }
+  print(sum)
+}
+cumlative(5)
+f<-function(n){
+  repeat{
+    if(n>10){
+      break
+    }
+    else{
+      n=n+1
+    }
+  }
+  n
+}
+f(5)
+f(1)
+len1<-0
+len2<<-0
+max2nd<-function(nums){
+  maxNum<-max(nums)
+  array<-c()
+  for(i in nums){
+    if(maxNum-i!=0){
+      array<-c(array,maxNum-i)
+    }
+  }
+  len1<-length(array)
+  len2<<-length(array)
+  return(maxNum-min(array))
+}
+nums<-c(3,-4,1,-6,3,11,7,8,9,12)
+max2nd(nums)
+f<-function(...){
+  args<-list(...)
+  for(a in args){
+    print(a)
+  }
+}
+f(1,4,5,10)
+g<-function(a,b){
+  print(a)
+  h<-function(a,b){
+    print(a+b)
+  }
+  h(a,b)
+}
+g(3,5)
+
+randomScore<-function(n){
+  score<-c()
+  for(i in 1:n){
+    score<-c(score,sample(100)[1])
+  }
+  score
+}
+score<-randomScore(30)
+score
